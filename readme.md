@@ -1,8 +1,8 @@
-Chip lowest posible turon on voltage lay in 2.6-2.8V range. 
+Chip lowest posible turn on voltage lay in 2.6-2.8V range. 
 
-On 3.3V one can expect chip to realiably work in 1MBit SPI transfer clock. 
+On 3.3V one can expect chip to realiably work with 1MBit SPI transfer clock. 
 
-On 5V 4.25MHZ SPI clock was achived without CRC errors.
+On 5V 2.25MHZ SPI clock was achived without CRC errors.
 
 
 Main clock frequency 4MHz
