@@ -11,7 +11,7 @@ Main clock frequency 4MHz
 
 stm32 spi peripheral setting is
 
-'''
+```c
 
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
@@ -30,5 +30,5 @@ stm32 spi peripheral setting is
     Error_Handler();
   }
 
-'''
+```
 
