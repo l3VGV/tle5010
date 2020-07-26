@@ -22,7 +22,7 @@ stm32 spi peripheral setting is
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;//LOW HIGH 
   hspi1.Init.CLKPhase = SPI_PHASE_2EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;//32 64 that is for spi1 and bus freq 72
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;//32-5V fast 64-safe 3.3V; that is for spi1 and bus freq 72
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
