@@ -9,6 +9,8 @@ Main clock frequency 4MHz
 
 
 
+
+For some reason, on bluepill board, pulldown of SPI SCK line requred, i used 1k, otherwise CRC error rate on 2MBit spi mode skyrocket.
 stm32 spi peripheral setting is
 
 ```c
