@@ -1,6 +1,6 @@
 Chip lowest posible turn on voltage lay in 2.6-2.8V range. 
 
-On 3.3V one can expect chip to realiably work with 1MBit SPI transfer clock. 
+On 3.3V one can expect chip to realiably work with 1MBit SPI transfer clock. Use lower resistance pullups, like 750R.
 
 On 5V 2.25MHZ SPI clock was achived without CRC errors(yet it not reliable and requare playng with spi config so edges will hit exacly where needed). After few seconds or minutes uc just lock up, and requre a reset.
 
