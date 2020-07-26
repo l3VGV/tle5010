@@ -2,7 +2,7 @@ Chip lowest posible turn on voltage lay in 2.6-2.8V range.
 
 On 3.3V one can expect chip to realiably work with 1MBit SPI transfer clock. Use lower resistance pullups, like 750R.
 
-On 5V 2.25MHZ SPI clock was achived without CRC errors(yet it not reliable and requare playng with spi config so edges will hit exacly where needed). After few seconds or minutes uc just lock up, and requre a reset.
+On 5V 2.25MHZ SPI clock was achived with low or no CRC errors. hct125 register was used to translate levels with stm32f103
 
 
 Main clock frequency 4MHz
@@ -11,6 +11,7 @@ Main clock frequency 4MHz
 
 
 For some reason, on bluepill board, pulldown of SPI SCK line requred, i used 1k, otherwise CRC error rate on 2MBit spi mode skyrocket.
+
 stm32 spi peripheral setting is
 
 ```c
