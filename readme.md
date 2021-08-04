@@ -82,4 +82,16 @@ uint8_t tle_data[5] = SpiRecive();
 crc = TLE5010CRC(tle_data, 4);
 
 if(crc != tle_data[4]) {'crc mismatch'}
+x = ((int16_t)((data[1] << 8) | data[0]));
+y = ((int16_t)((data[3] << 8) | data[2]));
+
+        if(
+        (x != 32767) && (x != -32768) 
+        && (y != 32767) && (y != -32768)
+        && (x != 0) && (x != 0)
+        )
+        {
+        //process data here, atan2 it for example
+        
+        }
 ```
