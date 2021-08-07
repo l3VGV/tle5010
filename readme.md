@@ -3,7 +3,7 @@ Chip lowest posible turn on voltage lay in 2.6-2.8V range.
 On 3.3V one can expect chip to realiably work with 1MBit SPI transfer clock. Use lower resistance pullups, like 750R.
 
 On 5V 2.25MHZ SPI clock was achived with low or no CRC errors. hct125 register was used to translate levels with stm32f103
-
+!BUT! i do not recomend that. chip is 5V nativly, work fine on 3.3V, so lower serial speed. With 1Mbit/s 5010 reliably work on 70cm long cable(common utp4).
 
 Main clock frequency 4MHz
 
